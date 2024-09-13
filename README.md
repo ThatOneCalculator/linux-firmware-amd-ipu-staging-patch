@@ -4,7 +4,7 @@ Patch for [linux-firmware](https://gitlab.com/kernel-firmware/linux-firmware) th
 How the patch is made:
 
 1. Go into `main` branch of https://gitlab.com/kernel-firmware/linux-firmware
-2. Add `drm` remote: https://gitlab.freedesktop.org/drm/firmware
+2. Add `drm` remote: https://gitlab.com/kernel-firmware/drm-firmware
 3. `git merge drm/amd-ipu-staging`
 4. Manually clean up `WHENCE` file, add and commit
 5. `git log -p --reverse --binary --pretty=email --stat -m --first-parent origin/main..HEAD > amd-ipu-staging.patch`
